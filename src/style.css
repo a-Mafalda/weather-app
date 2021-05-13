@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 h1,
@@ -36,14 +37,6 @@ a {
   font-size: 13px;
 }
 
-i {
-  font-size: 15px;
-  font-weight: 400;
-  position: absolute;
-  bottom: 15px;
-  right: -10px;
-}
-
 ul {
   list-style: none;
   text-align: left;
@@ -51,6 +44,15 @@ ul {
   color: #939597;
   font-size: 13px;
   margin-left: -25px;
+}
+
+i {
+  font-size: 20px;
+  color: #f5df4d;
+}
+
+small {
+  font-size: 12px;
 }
 
 .weatherApp {
@@ -78,21 +80,25 @@ ul {
   left: -5px;
 }
 
-#currentLocation {
-  position: relative;
-  left: 40px;
-}
-
 #enter {
   position: relative;
   left: 135px;
 }
 
-.main-picture {
-  display: block;
-  margin: 0 150px;
-  margin-top: 20px;
-  max-width: 100px;
+#currentLocation {
+  position: relative;
+  left: 40px;
+}
+
+.units {
+  font-size: 15px;
+  word-spacing: -3px;
+}
+
+.celsus,
+.fahrenheit {
+  font-size: 16px;
+  text-align: center;
 }
 
 .minMax {
@@ -109,15 +115,9 @@ ul {
   margin-top: -5px;
   word-spacing: 20px;
 }
-.units {
-  font-size: 15px;
-  word-spacing: -3px;
-}
 
-.celsus,
-.fahrenheit {
-  font-size: 16px;
-  text-align: center;
+.city {
+  font-size: 18px;
 }
 
 .card {
@@ -136,12 +136,17 @@ a:hover {
   color: #f5df4d;
 }
 
-.city {
-  font-size: 18px;
-}
-
 .icon-1,
 .icon-2,
 .icon-3 {
   width: 50px;
+}
+
+.author {
+  color: #939597;
+}
+
+::placeholder {
+  color: #939597;
+  font-size: 13px;
 }
