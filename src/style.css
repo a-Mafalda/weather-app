@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   text-align: center;
+  color: #939597;
 }
 
 input[type="text"] {
@@ -12,21 +13,9 @@ input[type="text"] {
   color: #939597;
 }
 
-h1,
-h4,
-h6,
-h5,
-p,
 i {
-  color: #939597;
-}
-
-h1 {
-  font-weight: 200;
-  margin-top: -40px;
-  margin-bottom: -10px;
-  text-align: center;
-  font-size: 68px;
+  font-size: 20px;
+  color: #f5df4d;
 }
 
 h4 {
@@ -34,30 +23,16 @@ h4 {
   text-transform: capitalize;
 }
 
-h5 {
-  font-size: smaller;
+ul,
+.weeklyForecast {
   text-align: center;
-  font-weight: 300;
 }
 
-a {
-  text-decoration: none;
-  color: #939597;
-  font-size: 13px;
-}
-
-ul {
+ul,
+.date {
   list-style: none;
-  text-align: left;
-  margin-top: 34px;
   color: #939597;
-  font-size: 13px;
-  margin-left: -25px;
-}
-
-i {
-  font-size: 20px;
-  color: #f5df4d;
+  text-align: left;
 }
 
 small {
@@ -79,76 +54,19 @@ small {
   background-size: 280px;
 }
 
-#search-engine {
-  position: relative;
-  left: 245px;
-}
-
-.col-6 {
-  position: relative;
-  left: -5px;
-}
-
-#enter {
-  position: relative;
-  left: 135px;
-}
-
-#currentLocation {
-  position: relative;
-  left: 40px;
-}
-
-.units {
-  font-size: 15px;
-  word-spacing: -3px;
-}
-
-.celsus,
-.fahrenheit {
-  font-size: 16px;
-  text-align: center;
-}
-
-.minMax {
-  margin-top: -10px;
-  font-weight: 300;
-}
-
 .temperature {
   margin-top: -10px;
   font-size: smaller;
   font-weight: 300;
 }
 .weekForecast {
-  margin-top: -5px;
   word-spacing: 20px;
-}
-
-.city {
-  font-size: 18px;
-}
-
-.card {
-  display: block;
-  margin-left: -35px;
-  margin-top: 14px;
-  border: none;
-}
-
-.col-4 {
-  color: #939597;
-  font-size: 13px;
-}
-
-a:hover {
-  color: #f5df4d;
 }
 
 .icon-1,
 .icon-2,
 .icon-3 {
-  width: 50px;
+  width: 45px;
 }
 
 .author {
