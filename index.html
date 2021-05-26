@@ -25,115 +25,112 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
-
-
-        <div class="row">
-          <div class="col-6">
-            <form>
-              <input
-                type="text"
-                placeholder="let's go somewhere..."
-                class="m-1 p-2"
-                autofocus="on"
-                autocomplete="off"
-                id="city-selector"
-              />
-            </form>
-          </div>
-          <div class="col-3">
-            <input
-              type="submit"
-              value="🌍"
-              class="form-control-sm btn border-0 m-1"
-              id="enter"
-            />
-          </div>
-          <div class="col-3">
-            <button
-              type="button"
-              class="form-control-sm btn border-0 m-1"
-              id="currentLocation"
-            >
-              <i class="fas fa-map-marked-alt"></i>
-            </button>
-          </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-
-        <div class="mainTemp">
-          <strong>14°</strong>
-          <span class="units">
-            <a class="celsus" href="#" id="celsusTemp">°C</a> |
-            <a class="fahrenheit" href="#" id="fahrenheitTemp">°F</a></span
-          >
-        </div>
-
-        <h4></h4>
-        <h6 class="minMax">Min.| Max.</h6>
-        <h6 class="temperature">
-          <span id="minTemp"></span> <span id="maxTemp"></span>
-        </h6>
-      
-      <div class="weekForecast">
-        <ul class="weeklyForecast">
-       <li>SAT SUN MON</li>
-          <li>14° 15° 16°</li>
-         
-        </ul>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <ul class="date">
-            <li class="city"></li>
-            <li class="weekDay">Friday</li>
-            <li class="monthDay">August, 14</li>
-            <li class="hour">3:30pm</li>
-          </ul>
-        </div>
-        <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weatherApp">
           <div class="row">
-            <div class="col-4">
-              Rome
-              <img
-                class="icon-1"
-                src="img/iconfinder_weather-windy_274753.png"
-                alt="windy"
+            <div class="col-6">
+              <form>
+                <input
+                  type="search"
+                  placeholder="Let's go somewhere..."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-selector"
+                />
+              </form>
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="yes!"
+                class="form-control-sm btn border-0"
+                id="enter"
               />
-              14°
             </div>
-            <div class="col-4">
-              Lisbon
-              <img class="icon-2" src="img/sun.png" alt="sun" />
-              15°
+            <div class="col-3">
+              <button
+                type="button"
+                class="form-control-sm btn border-0"
+                id="currentLocation"
+              >
+                <i class="fas fa-map-pin"></i>
+              </button>
             </div>
-            <div class="col-4">
-              New York
-              <img class="icon-3" src="img/umbrella.png" alt="umbrella" />
-              16°
+          </div>
+
+          <br />
+          <br />
+
+          <div class="mainTemp">
+            <strong class="">14</strong>
+            <span class="units">
+              <a class="celsus" href="#" id="celsusTemp">°C</a>
+              <a class="fahrenheit" href="#" id="fahrenheitTemp">°F</a></span
+            >
+          </div>
+          <div class="temperatureInfo">
+            <ul class="temperatureInfo">
+              <li><h4 id="weather-description">Broken Clouds</h4></li>
+              <li class="minMax">Min | Max</li>
+              <li class="minMaxTemp">
+                <span id="minTem">13°</span>
+                <span id="maxTemp">14°</span>
+              </li>
+            </ul>
+          </div>
+          <div class="favouriteCities">
+            <p>
+              <a href="#">Lisbon</a> <a href="#">Tokyo</a> <a href="#">Paris</a>
+            </p>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-6">
+              <ul class="currentDate">
+                <li class="city"></li>
+                <li class="weekDay">Friday</li>
+                <li class="monthDay">August,14</li>
+                <li class="hour">3:30pm</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="weekForecast">
+                <div class="row">
+                  <div class="col-4">
+                    Saturday
+                    <img
+                      class="icon-1"
+                      src="img/iconfinder_weather-windy_274753.png"
+                      alt="windy"
+                    />
+                  </div>
+                  <div class="col-4">
+                    Sunday
+                    <img class="icon-2" src="img/sun.png" alt="sun" />
+                  </div>
+                  <div class="col-4">
+                    Monday
+                    <img class="icon-3" src="img/umbrella.png" alt="umbrella" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-     </div>
+        <small class="footnote">
+          <a
+            href="https://github.com/a-Mafalda/weather-app"
+            target="_blank"
+            class="caption"
+          >
+            Open-source code,
+          </a>
 
+          <span class="author">by Mafalda Figueiredo</span>
+        </small>
+      </div>
     </div>
-
-    <small class="footnote">
-      <a
-        href="https://github.com/a-Mafalda/weather-app"
-        target="_blank"
-        class="caption"
-      >
-        Open-source code,
-      </a>
-
-      <span class="author">by Mafalda Figueiredo</span>
-    </small>
-
     <script src="script.js"></script>
   </body>
 </html>

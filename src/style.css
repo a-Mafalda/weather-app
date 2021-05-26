@@ -1,38 +1,86 @@
 body {
   font-family: "Lato", sans-serif;
-  text-align: center;
   color: #939597;
+  background-color: rgb(147, 149, 151, 0.1);
+  opacity: 75%;
+  text-align: center;
 }
 
-input[type="text"] {
+form {
+  margin-left: 270px;
+}
+
+input[type="search"] {
   border: none;
   box-shadow: none;
   height: 30px;
+  width: 140px;
   outline: 0;
-  width: 150px;
+  width: 140px;
+  margin: 5px 20px;
+}
+
+input[type="submit"] {
+  margin-left: 140px;
   color: #939597;
+  margin-top: 5px;
 }
 
 i {
   font-size: 20px;
-  color: #f5df4d;
+  color: #939597;
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
 h4 {
-  font-weight: 300;
+  font-weight: 350;
   text-transform: capitalize;
-}
-
-ul,
-.weeklyForecast {
   text-align: center;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #939597;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 ul,
-.date {
+.temperatureInfo {
+  text-align: center;
+  word-spacing: normal;
+}
+
+.minMax {
+  margin-top: -10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.minMaxTemp {
+  font-weight: 300;
+  word-spacing: 10px;
+  font-size: 12px;
+}
+
+.favouriteCities {
+  text-align: center;
+  word-spacing: 5px;
+  font-weight: 250;
+  font-size: 16px;
+}
+
+ul,
+.currentDate {
   list-style: none;
   color: #939597;
   text-align: left;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 small {
@@ -40,27 +88,48 @@ small {
 }
 
 .weatherApp {
-  border: 2px solid #939597;
-  border-radius: 20px;
-  box-shadow: 1px 1px #939597;
+  border-radius: 30px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
   text-align: center;
   padding: 10px 20px;
   display: block;
   margin: 50px auto;
   max-width: 600px;
+  max-height: 600px;
   background-image: url("../img/mainPic.png");
   background-repeat: no-repeat;
   background-position: 22px -40px;
   background-size: 280px;
+  background-color: #ffffff;
 }
 
-.temperature {
-  margin-top: -10px;
-  font-size: smaller;
-  font-weight: 300;
+::placeholder {
+  color: #939597;
+  font-size: 12px;
 }
+
+.mainTemp {
+  margin-top: 40px;
+}
+
+.mainTemp strong {
+  font-size: 68px;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.mainTemp .units {
+  position: relative;
+  top: -40px;
+  font-size: 12px;
+}
+
 .weekForecast {
-  word-spacing: 20px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .icon-1,
@@ -73,7 +142,6 @@ small {
   color: #939597;
 }
 
-::placeholder {
-  color: #939597;
-  font-size: 13px;
+a:hover {
+  color: #f5df4d;
 }
