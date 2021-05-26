@@ -6,10 +6,6 @@ body {
   text-align: center;
 }
 
-form {
-  margin-left: 270px;
-}
-
 input[type="search"] {
   border: none;
   box-shadow: none;
@@ -21,16 +17,17 @@ input[type="search"] {
 }
 
 input[type="submit"] {
-  margin-left: 140px;
+  margin-left: 15px;
   color: #939597;
-  margin-top: 5px;
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 i {
-  font-size: 20px;
+  font-size: 16px;
   color: #939597;
-  margin-left: 50px;
-  margin-top: 5px;
+
+  margin-top: 8px;
 }
 
 h4 {
