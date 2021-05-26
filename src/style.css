@@ -95,9 +95,9 @@ small {
   margin: 50px auto;
   max-width: 600px;
   max-height: 600px;
-  background-image: url("../img/mainPic.png");
+  background-image: url("../img/iconsMain/10d.png");
   background-repeat: no-repeat;
-  background-position: 22px -40px;
+  background-position: 30px -30px;
   background-size: 280px;
   background-color: #ffffff;
 }
