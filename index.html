@@ -31,11 +31,11 @@
             <div class="col-6"></div>
             <div class="col-6">
               <div class="row">
-                <div class="col-6">
-                  <form>
+                <div class="col-9">
+                  <form id="search-city">
                     <input
                       type="search"
-                      placeholder="Let's go somewhere..."
+                      placeholder="Let's go somewhere?"
                       autofocus="on"
                       autocomplete="off"
                       id="city-selector"
@@ -50,15 +50,6 @@
                     id="enter"
                   />
                 </div>
-                <div class="col-3">
-                  <button
-                    type="button"
-                    class="form-control-sm btn border-0"
-                    id="currentLocation"
-                  >
-                    <i class="fas fa-map-pin"></i>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -69,7 +60,7 @@
           <div class="mainTemp">
             <strong id="displayTemperature">14</strong>
             <span class="units">
-              <a class="celsus" href="#" id="celsusTemp">°C</a>
+              <a href="#" id="celsiusTemp" class="active">°C</a>
               <a class="fahrenheit" href="#" id="fahrenheitTemp">°F</a></span
             >
           </div>
@@ -84,7 +75,9 @@
           </div>
           <div class="favouriteCities">
             <p>
-              <a href="#">Lisbon</a> <a href="#">Tokyo</a> <a href="#">Paris</a>
+              <a href="#" id="city1">New York</a>
+              <a href="#" id="city2">Tokyo</a>
+              <a href="#" id="city3">London</a>
             </p>
           </div>
           <br />
@@ -98,7 +91,7 @@
               </ul>
             </div>
             <div class="col-6">
-              <div class="weekForecast">
+              <div class="weekForecast" id="forecast">
                 <div class="row">
                   <div class="col-4">
                     Saturday
