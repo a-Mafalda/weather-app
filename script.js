@@ -34,14 +34,9 @@ function showTemperature(response){
   currentHour.innerHTML = formatTime(response.data.dt * 1000);
   let currentDate = document.querySelector("#currentDate");
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
-  //let weatherIcon = document.querySelector(`body`).style.backgroundImage = `url(../img/iconsMain/01d.png)`;
-  //weatherIcon.setAttribute("url", `../img/iconsMain/01d.png`);
-  
-}
+  let weatherIcon = document.querySelectorAll(".weatherApp").setAttribute("url" /img/iconsMain/${response.data.weather[0].icon}.png);
 
-//let weatherIcon = document.getElementsByClassName(".weatherApp");
-//weatherIcon.setAttribute("src" `../img/iconsMain/01d.png`) ;
-  
+
 
 let apiKey = "656ac87c5034b9f4933b4a4211cbca36";
 let city = "London";
