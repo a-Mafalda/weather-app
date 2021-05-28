@@ -52,25 +52,6 @@ ul,
   word-spacing: normal;
 }
 
-.minMax {
-  margin-top: -10px;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-.minMaxTemp {
-  font-weight: 300;
-  word-spacing: 10px;
-  font-size: 12px;
-}
-
-.favouriteCities {
-  text-align: center;
-  word-spacing: 5px;
-  font-weight: 250;
-  font-size: 16px;
-}
-
 ul,
 .currentDate {
   list-style: none;
@@ -92,7 +73,7 @@ small {
   text-align: center;
   padding: 10px 20px;
   display: block;
-  margin: 50px auto;
+  margin: 70px auto;
   max-width: 600px;
   max-height: 600px;
   background-image: url("../img/iconsMain/10d.png");
@@ -100,6 +81,26 @@ small {
   background-position: 30px -30px;
   background-size: 280px;
   background-color: #ffffff;
+}
+
+.minMax {
+  margin-top: -10px;
+  font-weight: 300;
+  font-size: 12px;
+  word-spacing: 5px;
+}
+
+.minMaxTemp {
+  font-weight: 300;
+  word-spacing: 10px;
+  font-size: 12px;
+}
+
+.favouriteCities {
+  text-align: center;
+  word-spacing: 5px;
+  font-weight: 250;
+  font-size: 16px;
 }
 
 ::placeholder {
