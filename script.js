@@ -24,9 +24,8 @@ return `${day}, ${month} ${todayDate} `;
 
 
 function showTemperature(response){
-  console.log(response.data);
-  let city = document.querySelector("#defaultCity");
-  city.innerHTML = "Paris";
+  let city = document.querySelector("#currentCity");
+  city.innerHTML = response.data.name;
   let temperature = document.querySelector("#displayTemperature").innerHTML = Math.round(response.data.main.temp);
   let minTemperature = document.querySelector("#minTem").innerHTML = Math.round(response.data.main.temp_min);
   let maxTemperature = document.querySelector("#maxTemp").innerHTML = Math.round(response.data.main.temp_max);
@@ -35,20 +34,20 @@ function showTemperature(response){
   currentHour.innerHTML = formatTime(response.data.dt * 1000);
   let currentDate = document.querySelector("#currentDate");
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
+  let weatherIcon = document.querySelector(`body`).style.backgroundImage = `url(../img/iconsMain/01d.png)`;
+  weatherIcon.setAttribute("url", `../img/iconsMain/01d.png`);
   
 }
 
 
 
-
-//function search(city) {
-//let apiKey = "656ac87c5034b9f4933b4a4211cbca36";
-//let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q${city}&appid=${apiKey}&units=metric`;
-//axios.get(apiUrl).then(showTemperature);
-//}
+//let weatherIcon = document.getElementsByClassName(".weatherApp");
+//weatherIcon.setAttribute("src" `../img/iconsMain/01d.png`) ;
+  
 
 let apiKey = "656ac87c5034b9f4933b4a4211cbca36";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}&units=metric`;
+let city = "London";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemperature);
 
