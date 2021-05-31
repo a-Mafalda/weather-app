@@ -12,7 +12,7 @@ input[type="search"] {
   height: 30px;
   width: 140px;
   outline: 0;
-  width: 160px;
+  width: 150px;
   margin: 5px 50px;
 }
 
@@ -126,12 +126,6 @@ small {
 .weekForecast {
   font-size: 14px;
   font-weight: 400;
-}
-
-.icon-1,
-.icon-2,
-.icon-3 {
-  width: 45px;
 }
 
 .author {
